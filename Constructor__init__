@@ -1,0 +1,13 @@
+# Constructor SuperMarket
+
+class SuperMarket:
+    '''This is about SuperMarket'''
+    def __init__(self,brand,price,discount):
+        self.brand = brand
+        self.price = price
+        self.discount = discount
+
+bread = SuperMarket('ABC', 30 , 25)
+biscuit = SuperMarket('PQR', 50, 25)
+shampoo = SuperMarket('Dove', 45, 25)
+print(shampoo.price)
