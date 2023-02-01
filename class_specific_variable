@@ -1,0 +1,11 @@
+class SuperMarket:
+    Manufacturer = 'Mithu SuperMarket'
+    Marketer = 'MSM'
+    def __init__(self,brand,price):
+        self.brand = brand
+        self.price = price
+
+bread = SuperMarket('ABC',50)
+biscuit = SuperMarket('PQR',60)
+shampoo = SuperMarket('Dove',30)
+print(SuperMarket.Manufacturer)
