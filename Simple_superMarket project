@@ -1,0 +1,20 @@
+# SuperMarket project
+
+class SuperMarket:
+    '''This is about supermarket'''
+
+bread = SuperMarket()
+bread.brand = 'ABC'         
+bread.price = 25            
+biscuit = SuperMarket()
+biscuit.brand = 'PQR'
+biscuit.price = 10
+shampoo = SuperMarket()
+shampoo.brand = 'Dove'
+shampoo.price = 50
+rice = SuperMarket()
+rice.brand = 'Seeragasemba'
+rice.price = 60
+
+print(rice.price)
+print(shampoo.__dict__)  
