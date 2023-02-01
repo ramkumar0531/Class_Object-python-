@@ -1,0 +1,6 @@
+# __docstring__
+
+class student:
+    '''This is about student'''
+print(student.__doc__)
+help(student)
