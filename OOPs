@@ -1,0 +1,39 @@
+# Simple_OOPs
+
+import sys
+class customer:
+    '''This is consist the information about bank'''
+    bankName = 'Indian overseas Bank'
+    def __init__(self,name,accNo,balance = 500):
+        self.name = name
+        self.accNo = accNo
+        self.balance = balance
+
+    def deposit(self,amount):
+        self.balance = self.balance+amount
+        print(self.balance)
+
+
+    def withdraw(self,amount):
+        if amount>self.balance:
+            print('You have insufficient balance:')
+        else:
+            self.balance = self.balance-amount
+            print(self.balance)
+        
+
+print('Welcome to the', customer.bankName)
+name = input('Enter the name: ')
+accNo = int(input('Enter the accNo: '))
+Cus1 = customer(name,accNo)
+while True:
+    print('D-deposit','W-withdraw','S-stop')
+    choice = input('Enter your choice: ')
+    if choice == 'D':
+        amount = int(input('Enter the amount: '))
+        Cus1.deposit(amount)
+    elif choice == 'W':
+        amount = int(input('Enter the amount: '))
+    elif choice == 'S':
+        sys.exit()
+
