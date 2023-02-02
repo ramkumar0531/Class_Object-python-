@@ -1,0 +1,7 @@
+#Function_Method_in_calss
+
+class customer:
+    def deposit(self,amt):
+        print('Your going to deposit',amt)
+Ramkumar = customer()
+Ramkumar.deposit(500)
