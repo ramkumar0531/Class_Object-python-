@@ -1,0 +1,8 @@
+# Class_Method_in_function
+
+class office:
+    holidays = 10
+    def checkHoliday(cls,branch):
+        print('This is your',branch, 'has', cls.holidays)
+
+office.checkHoliday('chennai')
