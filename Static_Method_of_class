@@ -1,0 +1,8 @@
+# Static_Method_of_class
+
+class calculator:
+
+    def add(no1,no2):
+        print('The resule is: ',no1+no2)
+
+calculator.add(100,200)
