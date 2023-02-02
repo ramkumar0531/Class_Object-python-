@@ -1,0 +1,13 @@
+# Instand_Method_of_class
+
+class student:
+
+    def __init__(self,name,mark):
+        self.name = name
+        self.mark = mark
+
+    def display(self):
+        print('Hi',self.name)
+
+stud1 = student('Ramkumar',1120)
+stud1.display()
