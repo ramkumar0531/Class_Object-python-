@@ -1,0 +1,19 @@
+How to use super().__init__() and why we are using the construction
+
+what we have object specific information in parent of  __init__ constructor that wants to call by 
+child class we should write "super()__init__() in the child class
+
+class VasanthAndCO:
+    Address = 'Vadapalani'
+    def __init__(self):
+        self.head_offer = 2000
+
+class VasanthAndCoMadurai(VasanthAndCO):
+    add = 'Pudukkottai'
+    def __init__(self):
+        super().__init__()
+        self.branch_offer=1000
+
+customer = VasanthAndCoMadurai()
+print(customer.head_offer)
+print(customer.branch_offer)
