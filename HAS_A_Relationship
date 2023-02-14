@@ -1,0 +1,21 @@
+# HAS_A_Relationship
+
+class Engine:
+    mileage = 15
+    def __init__(self):
+        self.petrol=True
+
+    def engineStart(self):
+        print('Engine smoothly started')
+
+class Car:
+
+    def __init__(self):
+        self.engine = Engine()
+
+    def drive(self):
+        print(self.engine.mileage)
+        self.engine.engineStart()
+
+swift = Car()
+swift.drive()
