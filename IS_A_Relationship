@@ -1,0 +1,30 @@
+# IS_A_Relationship
+
+class ReseveBank:
+    
+    def __init__(self):
+        self.minbalance = 2000
+
+    def deposit(self):
+        print('deposite the amount')
+    
+    def withdraw(self):
+        print('Withdraw the amount')
+
+    @staticmethod
+    def f1():
+        print('This is static method')
+    
+    @classmethod
+
+    def f2(cls):
+        print('This is clsmethod')
+
+class SBI(ReseveBank):
+    pass
+
+pudukkottai = SBI()
+pudukkottai.deposit()
+pudukkottai.withdraw()
+pudukkottai.f1()
+pudukkottai.f2()
