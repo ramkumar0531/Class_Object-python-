@@ -1,0 +1,18 @@
+# Multiple_Inheritance
+
+class Father:
+    def drawing(self):
+        print('He is drawing univesel')
+
+class Mother:
+    def cooking(self):
+        print('She does cook very well')
+
+class child(Father,Mother):
+    def studing(self):
+        print('He is studying')
+
+boy = child()
+boy.studing()
+boy.drawing()
+boy.cooking()
