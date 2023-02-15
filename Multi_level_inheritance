@@ -1,0 +1,23 @@
+# Multi_level inheritance
+
+class ReserBank:
+
+    def deposit(self):
+        print('Deposit the amount')
+
+    def withdraw(self):
+        print('withdraw the amount')
+
+class SBI(ReserBank):
+    def giveEducationLoan(self):
+        print('Education loan')
+
+class cooperativeBank(SBI):
+    def giveAgriLoan(self):
+        print('Agri loan')
+
+student = cooperativeBank()
+student.giveAgriLoan()
+student.giveEducationLoan()
+student.deposit()
+student.withdraw()
