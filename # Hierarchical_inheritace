@@ -1,0 +1,18 @@
+# Hierarchical_inheritace
+
+class Honda:
+    def giveSalary(self):
+        print('Giving the dalary')
+
+class Bike(Honda):
+    def designBike(self):
+        print('Design the bike')
+
+class Car(Honda):
+    def DesingCar(self):
+        print('Desing Car')
+
+Emp = Car()
+Emp.giveSalary()
+Emp.DesingCar()
+Emp.designBick() #Car object has no attribute designBick so it will not print
