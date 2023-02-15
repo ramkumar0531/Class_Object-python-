@@ -1,0 +1,24 @@
+#Whenever we try to print an object, print statement will internally call 
+  # __str__fucntion. Whatever return that will be print as output
+
+
+class HumanBeing:
+
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    
+    def readingBook(self):
+        print('Reading Book')
+
+class Employee(HumanBeing):
+    def __init__(self, name, eno, salary):
+        super().__init__(name, age=20)
+        self.eno = eno
+        self.salary = salary
+
+    def __str__(self):
+        return 'Name = {}\n Age = {}\n Eno = {}\n Salary = {}'.format(self.name, self.age, self.eno, self.salary)
+    
+Emp = Employee('Ramkumar',5689, 150000)
+print(Emp)
