@@ -1,0 +1,43 @@
+# Super()._inheritance
+
+class parent:
+    i = 100
+    def __init__(self):
+        self.j = 200
+    
+    def test(self):
+        print('This is super class')
+
+    @staticmethod
+    def test1():
+        print('This is static method')
+    
+    @classmethod
+    def test2(cls):
+        print('This is class method')
+
+class child(parent):
+    def __init__(self):
+        super().__init__()
+        super().test()
+        super().test1()
+        super().test2()
+
+        
+    def man1(self):
+        print(super().i)
+        print(self.j)
+        super().test()
+        super().test1()
+        super().test2()
+    
+    @classmethod
+    def display(cls):
+        super(child,cls).test(cls)
+
+
+
+boy = child()
+boy.man1()
+boy.display()
+
