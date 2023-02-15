@@ -1,0 +1,18 @@
+# Single inheritance
+
+class ReserBank:
+
+    def deposit(self):
+        print('Deposit the amount')
+
+    def withdraw(self):
+        print('withdraw the amount')
+
+class SBI(ReserBank):
+    def giveEducationLoan(self):
+        print('Education loan')
+
+student = SBI()
+student.giveEducationLoan()
+student.deposit()
+student.withdraw()
